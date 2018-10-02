@@ -1,0 +1,6 @@
+# general things
+__pycache__/
+.vscode/
+
+# no need for this
+history.db

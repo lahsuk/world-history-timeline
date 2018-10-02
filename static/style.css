@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(images/noisy_grid_orange.png);
+    background-repeat: repeat;
+}
+
+#title {
+    position: fixed;
+    top: 20px;
+    font-size: 2.5em;
+    width: 100%;
+    text-align: center;
+}
+
+#legend, #choices {
+    position: fixed;
+    right: 0;
+    width: 20%;
+    height: 45px;
+    /* background-color: antiquewhite; */
+    background-image: url(images/ricepaper_v3.png);
+    background-repeat: repeat;
+    border: 3px black solid;
+    font-size: .75em;
+    padding: 5px;
+}
+
+#choices {
+    left: 0;
+    width: 12%;
+}
+
+#history-bar {
+    position: fixed;
+    top: 45%;
+    margin: 0 1.5% 0 1.5%;
+    width: 96.5%;
+    height: 16px;
+    background-color: #F9A825;
+    border: 3px black solid;
+}
+
+.cursor {
+    position: fixed;
+    top: 40%;
+    height: 25px;
+    width: 19px;
+    background-image: url(images/arrow.png)
+}
+
+.start-cursor {
+    left: 20px;
+}
+.end-cursor {
+    right: 25px;
+}
+
+.arrow-label {
+    position: relative;
+    top: -40px;
+    left: -15px;
+    text-align: center;
+    width: 50px;
+    background-image: url(images/ricepaper_v3.png);
+    background-repeat: repeat;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.data-label {
+    position: relative;
+    top: -160px;
+    left: -15px;
+    height: 75px;
+    width: 140px;
+    padding: 1px;
+    overflow-y: auto;
+    font-size: .6em;
+    background-image: url(images/ricepaper_v3.png);
+    background-repeat: repeat;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#time-control-icons {
+    position: fixed;
+    left: 40%;
+    top: 49%;
+    display: block;
+    text-align: center;
+    width: 20%;
+}
+
+.bg-image {
+    height: 64px;
+    width: 64px;
+    background-size: 64px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.plus-icon {
+    background-image: url(images/plus.png);
+}
+
+.minus-icon {
+    background-image: url(images/minus.png);
+}
+
+.left-arrow {
+    margin-top: 20px;
+    background-image: url(images/left-arrow.png);
+
+}
+.right-arrow {
+    position: absolute;
+    margin-top: 20px;
+    background-image: url(images/left-arrow.png);
+    transform: rotate(180deg);
+    right: -5px;
+}
+
+.data {
+    position: fixed;
+    top: 60%;
+    width: 90%;
+    height: 35%;
+    margin: 0 5% 0 5%;
+    overflow-y: auto;
+    background-image: url(images/ricepaper_v3.png);
+    background-repeat: repeat;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-text {
+    font-family: 'EB Garamond', serif;
+    font-size: .75em;
+}
+.card-title {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: .9em;
+}

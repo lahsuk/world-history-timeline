@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timeline</title>
+    <link rel="stylesheet" href=" {{ url_for('static', filename='style.css') }} " />
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|IBM+Plex+Sans+Condensed:500" rel="stylesheet">
+</head>
+
+<body>
+    <div id="title" class="card-title">World History Timeline</div>
+
+    <div id="choices">
+        <p><b>Choices:</b></p>        
+        Items to load: <input id="load_count" type="text" name="n" value="20" maxlength="5" size="5"> <br>
+        <input id="randomize" name="randomize" checked="checked" type="checkbox" onclick="getData()"> Randomize <br>
+        
+    </div>
+    <div id="legend"><p><b>Legend:</b></p><p>CE = Common Era (or more commonly AD)</p><p>BCE = Before Common Era (or more commonly BC)</p></div>
+
+    <div id="time-control-icons">
+        <button class="bg-image minus-icon" onclick="increaseTimeDelta();"></button>
+        <button class="bg-image plus-icon" onclick="decreaseTimeDelta();"></button>
+    </div>
+
+    
+    <div id="history-bar">
+        <button class="bg-image left-arrow" onclick="decreaseTime();"></button>
+        <button class="bg-image right-arrow" onclick="increaseTime();"></button>
+    </div>
+    <div class="cursor start-cursor">
+        <div id="start" class="arrow-label card-title">2,016 CE</div>
+    </div>
+    <div class="cursor end-cursor">
+        <div id="end" class="arrow-label card-title">2,018 CE</div>
+    </div>
+
+    <div id="data" class="data"></div>
+    
+    <script src=" {{ url_for('static', filename='history.js') }} "></script>
+</body>
+</html>
